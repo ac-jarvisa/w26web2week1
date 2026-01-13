@@ -72,3 +72,42 @@ h1{
         /* two values means top-bottom, left-right*/
         margin:15px 0;
 }
+
+/* you can target elements based on what they are inside */
+section img{
+    /* only scale one dimension of an image, width or height */
+    width:20%;
+    float:left; /* floating an image will make the text sit next to it, and wrap around it */
+    /* four value means top, right, bottom, left*/
+    margin: 0 15px 15px 0;
+}
+
+nav a{
+    color:azure;
+    font-size:1.2em; /* ems are relative to the font size of the parent - 1.2 = 120% */
+    text-decoration:none; /* removes the underlining */
+}
+
+/*links have states, which you style using pseudoclasses */
+nav a:hover{
+    color:crimson;
+}
+
+nav a:active{
+    color:darkgray;
+}
+
+/* there is also a visited state, for when users have been to a link */
+
+/* style an id using # */
+#current{
+    background-color:antiquewhite;
+    color:blueviolet;
+    font-weight:bold;
+}
+
+section{
+    margin:20px;
+    border:2px black solid;
+    padding:15px; /* padding pushes content away from the edge of the element */
+}
